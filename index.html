@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Assistiva Tech | Asistentes virtuales para emprendedores y empresas</title>
+<meta name="description" content="Delegá tareas administrativas, atención al cliente, ventas y redes sociales en asistentes virtuales capacitadas. Ahorrá tiempo, reducí costos y hacé crecer tu negocio con Assistiva Tech." />
+<meta name="keywords" content="asistentes virtuales, asistente virtual, outsourcing administrativo, delegar tareas, atención al cliente remota, gestión de redes sociales, pymes, emprendedores" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.assistivatech.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Assistiva Tech" />
+<meta property="og:title" content="Assistiva Tech | Tu negocio crece y nosotras te acompañamos" />
+<meta property="og:description" content="Asistentes virtuales capacitadas para tareas administrativas, atención al cliente, ventas y redes sociales. Asistencia personalizada, resultados garantizados." />
+<meta property="og:image" content="https://www.assistivatech.com/assets/images/assistiva-logo.png" />
+<meta property="og:locale" content="es_AR" />
+<meta property="og:url" content="https://www.assistivatech.com/" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Assistiva Tech | Tu negocio crece y nosotras te acompañamos" />
+<meta name="twitter:description" content="Asistentes virtuales capacitadas para emprendedores, profesionales y empresas." />
+<meta name="twitter:image" content="https://www.assistivatech.com/assets/images/assistiva-logo.png" />
+
+<link rel="icon" href="assets/images/assistiva-logo.png" type="image/png" />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Assistiva Tech",
+  "description": "Asistentes virtuales para emprendedores, profesionales y empresas: agenda, atención al cliente, redes sociales, administración y más.",
+  "image": "https://www.assistivatech.com/assets/images/assistiva-logo.png",
+  "url": "https://www.assistivatech.com/",
+  "telephone": "+54-9-341-000-0000",
+  "priceRange": "$$",
+  "areaServed": "AR",
+  "sameAs": [
+    "https://www.instagram.com/assistivatech",
+    "https://www.linkedin.com/company/assistivatech"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root{
+    --violet-950:#150F2A;
+    --violet-900:#211744;
+    --violet-800:#33206E;
+    --violet-700:#4B25A0;
+    --violet-600:#6228D6;
+    --violet-500:#7C3AED;
+    --indigo-500:#4F46E5;
+    --indigo-400:#6366F1;
+    --lilac-300:#C4B5FD;
+    --lilac-200:#DDD6FE;
+    --lilac-100:#EFEAFD;
+    --surface:#FFFFFF;
+    --surface-alt:#F8F6FC;
+    --surface-raised:#FFFFFF;
+    --ink:#1B1530;
+    --ink-soft:#4B4460;
+    --gray-500:#78718C;
+    --gray-400:#A29CB5;
+    --border:#EBE7F6;
+    --shadow-color:222deg 40% 30%;
+    --radius-lg:28px;
+    --radius-md:18px;
+    --radius-sm:12px;
+  }
+  html.dark{
+    --surface:#0F0A22;
+    --surface-alt:#160F30;
+    --surface-raised:#1B1338;
+    --ink:#F3F0FB;
+    --ink-soft:#C9C2E0;
+    --gray-500:#B0A8CC;
+    --gray-400:#8A82A8;
+    --border:#2C2354;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'Inter', system-ui, sans-serif;
+    background:var(--surface);
+    color:var(--ink);
+    transition:background-color .4s ease, color .4s ease;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4, .font-display{ font-family:'Poppins', system-ui, sans-serif; }
+  section[id]{ scroll-margin-top: 92px; }
+
+  ::selection{ background:var(--lilac-300); color:var(--violet-950); }
+
+  .text-ink{ color:var(--ink); }
+  .text-ink-soft{ color:var(--ink-soft); }
+  .text-gray-500c{ color:var(--gray-500); }
+  .bg-surface{ background:var(--surface); }
+  .bg-surface-alt{ background:var(--surface-alt); }
+  .bg-surface-raised{ background:var(--surface-raised); }
+  .border-c{ border-color:var(--border); }
+
+  .grad-text{
+    background:linear-gradient(100deg, var(--violet-700), var(--indigo-500) 55%, var(--violet-500));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .grad-brand{ background:linear-gradient(120deg, var(--violet-700), var(--indigo-500)); }
+  .grad-brand-soft{ background:linear-gradient(135deg, var(--lilac-100), var(--surface)); }
+
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:.5rem; font-weight:600; border-radius:999px; transition:all .25s cubic-bezier(.2,.8,.2,1); white-space:nowrap; }
+  .btn:focus-visible{ outline:2px solid var(--indigo-500); outline-offset:3px; }
+  .btn-primary{ background:linear-gradient(120deg, var(--violet-700), var(--indigo-500)); color:#fff; box-shadow:0 10px 30px -8px hsl(var(--shadow-color) / .55); }
+  .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 16px 36px -8px hsl(var(--shadow-color) / .65); }
+  .btn-secondary{ background:var(--surface); color:var(--violet-700); border:1.5px solid var(--border); }
+  html.dark .btn-secondary{ color:var(--lilac-200); }
+  .btn-secondary:hover{ border-color:var(--violet-500); transform:translateY(-2px); }
+  .btn-ghost{ color:var(--ink); }
+  .btn-ghost:hover{ color:var(--violet-600); }
+  .btn-whatsapp{ background:#1FAA59; color:#fff; }
+  .btn-whatsapp:hover{ transform:translateY(-2px); box-shadow:0 14px 28px -10px rgba(31,170,89,.55); }
+
+  .card{ background:var(--surface-raised); border:1px solid var(--border); border-radius:var(--radius-md); transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s, border-color .35s; }
+  .card:hover{ transform:translateY(-6px); border-color:transparent; box-shadow:0 26px 50px -22px hsl(var(--shadow-color) / .45); }
+
+  .icon-badge{ width:48px; height:48px; border-radius:14px; display:flex; align-items:center; justify-content:center; background:var(--lilac-100); color:var(--violet-700); flex-shrink:0; transition:background .35s, color .35s, transform .35s; }
+  html.dark .icon-badge{ background:rgba(124,58,237,.18); color:var(--lilac-200); }
+  .card:hover .icon-badge{ background:linear-gradient(135deg,var(--violet-700),var(--indigo-500)); color:#fff; transform:scale(1.06) rotate(-4deg); }
+
+  .navlink{ position:relative; color:var(--ink-soft); font-weight:500; font-size:.925rem; }
+  .navlink::after{ content:''; position:absolute; left:0; right:0; bottom:-6px; height:2px; background:linear-gradient(90deg,var(--violet-600),var(--indigo-500)); transform:scaleX(0); transform-origin:left; transition:transform .3s ease; border-radius:2px; }
+  .navlink:hover{ color:var(--ink); }
+  .navlink:hover::after{ transform:scaleX(1); }
+
+  .reveal{ opacity:0; transform:translateY(28px); transition:opacity .7s cubic-bezier(.16,.8,.24,1), transform .7s cubic-bezier(.16,.8,.24,1); }
+  .reveal.is-visible{ opacity:1; transform:translateY(0); }
+  .reveal-scale{ opacity:0; transform:scale(.94); transition:opacity .7s ease, transform .7s cubic-bezier(.16,.8,.24,1); }
+  .reveal-scale.is-visible{ opacity:1; transform:scale(1); }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .reveal, .reveal-scale{ opacity:1 !important; transform:none !important; transition:none !important; }
+    *{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
+  }
+
+  .orbit-ring{ position:absolute; border-radius:50%; border:1.5px solid var(--lilac-300); opacity:.55; }
+  html.dark .orbit-ring{ opacity:.28; }
+  .float-slow{ animation:floaty 7s ease-in-out infinite; }
+  .float-slower{ animation:floaty 9.5s ease-in-out infinite; animation-delay:-3s; }
+  @keyframes floaty{ 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-14px) } }
+  @keyframes spin-slow{ to{ transform:rotate(360deg); } }
+  .spin-slow{ animation:spin-slow 40s linear infinite; }
+  .spin-slow-rev{ animation:spin-slow 55s linear infinite reverse; }
+
+  .blob{ position:absolute; filter:blur(60px); opacity:.35; border-radius:50%; }
+
+  /* Hero task card */
+  .task-card{ background:var(--surface-raised); border:1px solid var(--border); border-radius:var(--radius-md); box-shadow:0 30px 60px -20px hsl(var(--shadow-color)/.5); }
+  .task-row{ display:flex; align-items:center; gap:.7rem; padding:.55rem .2rem; border-radius:10px; transition:background .3s, opacity .5s, transform .5s; }
+  .task-check{ width:20px; height:20px; border-radius:7px; border:2px solid var(--lilac-300); flex-shrink:0; display:flex; align-items:center; justify-content:center; transition:all .4s cubic-bezier(.3,1.4,.4,1); }
+  .task-row.done .task-check{ background:linear-gradient(135deg,var(--violet-600),var(--indigo-500)); border-color:transparent; }
+  .task-row.done .task-label{ color:var(--gray-400); text-decoration:line-through; }
+  .task-check svg{ opacity:0; transform:scale(.4); transition:all .3s ease; }
+  .task-row.done .task-check svg{ opacity:1; transform:scale(1); }
+
+  /* Timeline */
+  .timeline-line{ background:linear-gradient(90deg, var(--border), var(--violet-500), var(--border)); }
+  .step-num{ font-family:'Poppins',sans-serif; font-weight:700; }
+
+  /* Accordion */
+  .faq-item[open] > summary .chev{ transform:rotate(180deg); }
+  .faq-item summary{ list-style:none; cursor:pointer; }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item .faq-body{ overflow:hidden; }
+
+  input:focus, textarea:focus{ outline:none; }
+  .field{ background:var(--surface); border:1.5px solid var(--border); border-radius:12px; transition:border-color .25s, box-shadow .25s; }
+  .field:focus-within{ border-color:var(--violet-500); box-shadow:0 0 0 4px var(--lilac-100); }
+  html.dark .field:focus-within{ box-shadow:0 0 0 4px rgba(124,58,237,.18); }
+  .field-error{ border-color:#E24C4C !important; }
+
+  .skip-link{ position:absolute; left:-999px; top:0; background:var(--violet-700); color:#fff; padding:.75rem 1.25rem; border-radius:0 0 10px 0; z-index:100; }
+  .skip-link:focus{ left:0; }
+
+  #backToTop{ opacity:0; pointer-events:none; transform:translateY(12px); transition:all .3s ease; }
+  #backToTop.show{ opacity:1; pointer-events:auto; transform:translateY(0); }
+
+  .stat-num{ font-family:'Poppins',sans-serif; }
+
+  #mobileMenu{ transform:translateX(100%); transition:transform .45s cubic-bezier(.16,.8,.24,1); }
+  #mobileMenu.open{ transform:translateX(0); }
+
+  .whatsapp-fab{ box-shadow:0 16px 34px -10px rgba(31,170,89,.55); }
+  .whatsapp-fab::before{ content:''; position:absolute; inset:0; border-radius:999px; background:#1FAA59; opacity:.6; animation:pulse-ring 2.4s cubic-bezier(.3,.6,.4,1) infinite; }
+  @keyframes pulse-ring{ 0%{ transform:scale(1); opacity:.55 } 100%{ transform:scale(1.9); opacity:0 } }
+
+  .marquee-track{ animation:marquee 32s linear infinite; }
+  @keyframes marquee{ from{ transform:translateX(0) } to{ transform:translateX(-50%) } }
+</style>
+</head>
+<body class="bg-surface text-ink">
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+<!-- ===================== NAVBAR ===================== -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div id="navInner" class="flex items-center justify-between h-[76px] transition-all duration-300 rounded-b-[26px]">
+      <a href="#" class="flex items-center gap-2.5 shrink-0" aria-label="Assistiva Tech - Inicio">
+        <span class="font-display font-bold text-xl tracking-tight">Assistiva<span class="grad-text">Tech</span></span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Navegación principal">
+        <a href="#quienes-somos" class="navlink">Nosotras</a>
+        <a href="#servicios" class="navlink">Servicios</a>
+        <a href="#sectores" class="navlink">Sectores</a>
+        <a href="#como-trabajamos" class="navlink">Cómo trabajamos</a>
+        <a href="#beneficios" class="navlink">Beneficios</a>
+        <a href="#faq" class="navlink">Preguntas</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <button id="darkToggle" aria-label="Cambiar tema claro/oscuro" class="w-10 h-10 rounded-full border border-c flex items-center justify-center hover:border-[var(--violet-500)] transition-colors">
+          <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+          <svg id="iconMoon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+        </button>
+        <a href="#servicios" class="btn btn-secondary px-5 py-2.5 text-sm">Ver servicios</a>
+        <a href="#contacto" data-open-modal class="btn btn-primary px-5 py-2.5 text-sm">Solicitar una reunión</a>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden w-11 h-11 flex flex-col items-center justify-center gap-[5px]" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="block w-6 h-[2px] bg-current rounded"></span>
+        <span class="block w-6 h-[2px] bg-current rounded"></span>
+        <span class="block w-4 h-[2px] bg-current rounded self-end"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div id="mobileMenu" class="fixed inset-0 z-[60] lg:hidden bg-surface flex flex-col p-6">
+  <div class="flex items-center justify-between mb-10">
+    <div class="flex items-center gap-2.5">
+      <span class="font-display font-bold text-lg">Assistiva<span class="grad-text">Tech</span></span>
+    </div>
+    <button id="closeMenuBtn" aria-label="Cerrar menú" class="w-10 h-10 flex items-center justify-center text-2xl">✕</button>
+  </div>
+  <nav class="flex flex-col gap-1 text-lg font-display font-medium" aria-label="Navegación móvil">
+    <a href="#quienes-somos" class="mobile-link py-3.5 border-b border-c">Nosotras</a>
+    <a href="#servicios" class="mobile-link py-3.5 border-b border-c">Servicios</a>
+    <a href="#sectores" class="mobile-link py-3.5 border-b border-c">Sectores</a>
+    <a href="#como-trabajamos" class="mobile-link py-3.5 border-b border-c">Cómo trabajamos</a>
+    <a href="#beneficios" class="mobile-link py-3.5 border-b border-c">Beneficios</a>
+    <a href="#faq" class="mobile-link py-3.5 border-b border-c">Preguntas</a>
+  </nav>
+  <div class="mt-auto flex flex-col gap-3 pt-6">
+    <button id="darkToggleMobile" class="btn btn-secondary py-3">Modo oscuro / claro</button>
+    <a href="#contacto" data-open-modal class="btn btn-primary py-3.5">Solicitar una reunión</a>
+    <a id="waMobile" href="#" data-open-whatsapp-modal class="btn btn-whatsapp py-3.5">Hablar por WhatsApp</a>
+  </div>
+</div>
+
+<main id="main">
+<!-- ===================== HERO ===================== -->
+<section class="relative min-h-screen flex items-center overflow-hidden pt-28 pb-16 lg:pt-24">
+  <div class="absolute inset-0 -z-10 bg-surface-alt"></div>
+  <div class="blob w-[520px] h-[520px] -top-40 -left-32" style="background:radial-gradient(circle,var(--violet-500),transparent 70%)"></div>
+  <div class="blob w-[460px] h-[460px] top-20 -right-24" style="background:radial-gradient(circle,var(--indigo-500),transparent 70%)"></div>
+  <div class="orbit-ring w-[260px] h-[260px] top-[12%] right-[6%] spin-slow hidden md:block"></div>
+  <div class="orbit-ring w-[160px] h-[160px] bottom-[8%] left-[4%] spin-slow-rev hidden md:block"></div>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 w-full">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <div class="reveal inline-flex items-center gap-2 bg-surface border border-c rounded-full pl-1.5 pr-4 py-1.5 text-sm font-medium text-ink-soft mb-7 shadow-sm">
+          <span class="w-6 h-6 rounded-full grad-brand flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          Asistencia personalizada · Resultados garantizados
+        </div>
+
+        <h1 class="reveal font-display font-bold leading-[1.05] text-[2.6rem] sm:text-6xl tracking-tight">
+          Tu negocio crece y <span class="grad-text">nosotras te acompañamos a mejorar el rendimiento.</span>
+        </h1>
+
+        <p class="reveal text-lg text-ink-soft mt-6 max-w-xl leading-relaxed" style="transition-delay:.08s">
+          En Assistiva Tech conectamos tu empresa con asistentes virtuales capacitadas para ayudarte con tareas administrativas, atención al cliente, ventas, redes sociales y mucho más.
+        </p>
+
+        <div class="reveal flex flex-col sm:flex-row gap-4 mt-9" style="transition-delay:.16s">
+          <a href="#contacto" data-open-modal class="btn btn-primary px-7 py-4">
+            Solicitar una reunión
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#servicios" class="btn btn-secondary px-7 py-4">Ver servicios</a>
+        </div>
+
+        <div class="reveal flex flex-wrap items-center gap-6 mt-10 text-sm text-gray-500c" style="transition-delay:.24s">
+          <div class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--violet-600)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg> Equipo propio, sin intermediarios</div>
+          <div class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--violet-600)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg> Trato cercano y personalizado</div>
+        </div>
+      </div>
+
+      <!-- Visual: brand logo panel + animated task card -->
+      <div class="relative reveal-scale h-[420px] sm:h-[480px]" style="transition-delay:.1s">
+        <div class="absolute right-0 top-2 w-[78%] sm:w-[72%] h-[78%] rounded-[var(--radius-lg)] overflow-hidden shadow-2xl float-slower bg-surface border border-c flex items-center justify-center p-10 sm:p-14">
+          <img src="assets/images/assistiva-logo.png" alt="Assistiva Tech" class="w-full h-full object-contain" width="500" height="369" />
+        </div>
+
+        <div class="task-card absolute left-0 bottom-2 w-[72%] sm:w-[64%] p-5 float-slow">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wide text-gray-500c">Hoy delegaste</span>
+            <span class="text-xs font-semibold grad-text">4/5</span>
+          </div>
+          <div id="taskList" class="flex flex-col">
+            <div class="task-row" data-delay="300"><span class="task-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span class="task-label text-sm">Responder correos pendientes</span></div>
+            <div class="task-row" data-delay="900"><span class="task-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span class="task-label text-sm">Agendar reunión con proveedor</span></div>
+            <div class="task-row" data-delay="1500"><span class="task-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span class="task-label text-sm">Publicar en Instagram</span></div>
+            <div class="task-row" data-delay="2100"><span class="task-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span class="task-label text-sm">Cargar pedidos en la tienda</span></div>
+            <div class="task-row" data-delay="0"><span class="task-check"></span><span class="task-label text-sm">Vos: enfocarte en crecer</span></div>
+          </div>
+        </div>
+
+        <div class="absolute -right-3 -bottom-3 sm:-right-4 sm:-bottom-4 w-16 h-16 sm:w-20 sm:h-20 rounded-2xl grad-brand shadow-xl flex items-center justify-center text-white float-slow" style="animation-delay:-2s">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== QUIENES SOMOS ===================== -->
+<section id="quienes-somos" class="py-24 lg:py-32 bg-surface">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal order-2 lg:order-1 relative">
+      <svg viewBox="0 0 460 420" class="w-full h-auto" role="img" aria-label="Ilustración de red de trabajo remoto colaborativo">
+        <defs>
+          <linearGradient id="illGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="var(--violet-700)"/>
+            <stop offset="100%" stop-color="var(--indigo-500)"/>
+          </linearGradient>
+        </defs>
+        <circle cx="230" cy="210" r="150" fill="var(--lilac-100)"/>
+        <circle cx="230" cy="210" r="112" fill="none" stroke="var(--lilac-300)" stroke-width="1.5" stroke-dasharray="3 7"/>
+        <rect x="150" y="150" width="160" height="112" rx="16" fill="var(--surface)" stroke="var(--border)" stroke-width="2"/>
+        <rect x="168" y="172" width="60" height="8" rx="4" fill="url(#illGrad)"/>
+        <rect x="168" y="190" width="100" height="6" rx="3" fill="var(--border)"/>
+        <rect x="168" y="204" width="80" height="6" rx="3" fill="var(--border)"/>
+        <rect x="168" y="228" width="46" height="18" rx="9" fill="url(#illGrad)"/>
+        <circle cx="115" cy="120" r="30" fill="url(#illGrad)"/>
+        <circle cx="115" cy="120" r="30" fill="none"/>
+        <circle cx="350" cy="130" r="22" fill="var(--indigo-500)" opacity=".85"/>
+        <circle cx="360" cy="300" r="26" fill="var(--violet-500)" opacity=".85"/>
+        <circle cx="95" cy="300" r="18" fill="var(--lilac-300)"/>
+        <path d="M115 120 L150 180" stroke="var(--lilac-300)" stroke-width="2"/>
+        <path d="M350 130 L300 175" stroke="var(--lilac-300)" stroke-width="2"/>
+        <path d="M360 300 L305 250" stroke="var(--lilac-300)" stroke-width="2"/>
+        <path d="M95 300 L165 250" stroke="var(--lilac-300)" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="order-1 lg:order-2">
+      <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">¿Quiénes somos?</span>
+      <h2 class="reveal font-display font-bold text-3xl sm:text-4xl leading-tight mb-6">Un equipo pensado para que vuelvas a enfocarte en lo importante</h2>
+      <p class="reveal text-ink-soft leading-relaxed mb-5" style="transition-delay:.08s">
+        Assistiva Tech es una empresa especializada en asistentes virtuales para emprendedores, profesionales y empresas que buscan ahorrar tiempo, reducir costos y enfocarse en hacer crecer su negocio.
+      </p>
+      <p class="reveal text-ink-soft leading-relaxed mb-8" style="transition-delay:.14s">
+        Nuestro objetivo es convertirnos en un aliado estratégico para nuestros clientes, brindando soporte administrativo y operativo con profesionales altamente capacitadas.
+      </p>
+      <div class="reveal grid grid-cols-2 gap-5" style="transition-delay:.2s">
+        <div class="flex items-start gap-2.5">
+          <svg class="mt-0.5 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--violet-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+          <p class="text-sm text-ink-soft leading-snug">Equipo propio, sin intermediarios</p>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <svg class="mt-0.5 shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--violet-600)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+          <p class="text-sm text-ink-soft leading-snug">Trato cercano y personalizado</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICIOS ===================== -->
+<section id="servicios" class="py-24 lg:py-32 bg-surface-alt">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Servicios</span>
+      <h2 class="reveal font-display font-bold text-3xl sm:text-4xl">Nuestro servicio</h2>
+      <p class="reveal text-ink-soft mt-4" style="transition-delay:.08s">Todo lo que podés delegar hoy mismo.</p>
+    </div>
+    <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- ===================== SECTORES ===================== -->
+<section id="sectores" class="py-24 lg:py-32 bg-surface">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Sectores que ayudamos</span>
+      <h2 class="reveal font-display font-bold text-3xl sm:text-4xl">Asistencia virtual enfocada en ventas, para cada rubro</h2>
+      <p class="reveal text-ink-soft mt-4" style="transition-delay:.08s">En Assistiva Tech nos especializamos exclusivamente en asistencia virtual para ventas: atención al cliente, gestión comercial y procesos que ayudan a vender mejor.</p>
+    </div>
+    <div id="sectorsGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+  </div>
+</section>
+
+<!-- ===================== COMO TRABAJAMOS ===================== -->
+<section id="como-trabajamos" class="py-24 lg:py-32 bg-surface-alt overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-20">
+      <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Cómo trabajamos</span>
+      <h2 class="reveal font-display font-bold text-3xl sm:text-4xl">De la primera charla a delegar, en cuatro pasos</h2>
+    </div>
+    <div class="relative">
+      <div class="timeline-line hidden lg:block absolute top-7 left-[12%] right-[12%] h-[2px]"></div>
+      <div id="timelineGrid" class="grid lg:grid-cols-4 gap-10 lg:gap-6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BENEFICIOS ===================== -->
+<section id="beneficios" class="py-24 lg:py-32 bg-surface">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-16">
+      <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Beneficios</span>
+      <h2 class="reveal font-display font-bold text-3xl sm:text-4xl">Lo que ganás al delegar con nosotras</h2>
+    </div>
+    <div id="benefitsGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </div>
+</section>
+
+<!-- ===================== POR QUE ELEGIRNOS ===================== -->
+<section id="porque-elegirnos" class="py-24 lg:py-32 bg-surface-alt">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid lg:grid-cols-5 gap-16 items-start">
+      <div class="lg:col-span-2 lg:sticky lg:top-28">
+        <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">¿Por qué elegirnos?</span>
+        <h2 class="reveal font-display font-bold text-3xl sm:text-4xl mb-6">Nuestra empresa</h2>
+        <p class="reveal text-ink-soft leading-relaxed mb-4" style="transition-delay:.08s">Assistiva Tech es un equipo conformado por mujeres que trabajan juntas, codo a codo con cada cliente.</p>
+        <p class="reveal text-ink-soft leading-relaxed mb-10" style="transition-delay:.12s">Nosotras realizamos directamente el servicio: no contratamos asistentes externas ni derivamos tu proyecto a otras personas. Por eso podemos garantizar cercanía, compromiso y una mirada consistente en cada tarea.</p>
+        <div id="indicatorsGrid" class="reveal grid sm:grid-cols-2 gap-4" style="transition-delay:.16s"></div>
+      </div>
+      <div id="whyUsGrid" class="lg:col-span-3 grid sm:grid-cols-2 gap-5"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="caso-real" class="py-24 lg:py-32 bg-surface-alt overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center mb-14">
+      <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Proyecto realizado</span>
+      <h2 class="reveal font-display font-bold text-3xl sm:text-4xl">Saboreé</h2>
+      <p class="reveal text-ink-soft mt-4" style="transition-delay:.08s">Trabajamos junto a un emprendimiento de alfajores artesanales que necesitaba mejorar su asistencia virtual en ventas.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-10 items-start">
+      <div class="lg:col-span-2 reveal card p-8 sm:p-9 grad-brand text-white flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 text-xs font-semibold mb-6">Caso real · Alfajores artesanales</span>
+          <p class="text-white/90 leading-relaxed mb-5">La dueña del emprendimiento quería vender más y mejor a través de WhatsApp Business e Instagram, sin perder la calidez que distingue a su marca.</p>
+          <p class="text-white/90 leading-relaxed">Nuestro objetivo fue mejorar el proceso de ventas sin perder la identidad de la marca, evitando respuestas frías o automatizadas.</p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-white/20">
+          <p class="text-sm text-white/80 leading-relaxed">Al finalizar, entregamos toda la estrategia documentada para que pudiera implementarla por su cuenta o seguir trabajando con nosotras.</p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3 reveal card p-8 sm:p-9" style="transition-delay:.1s">
+        <h3 class="font-display font-semibold text-lg mb-5">Qué hicimos</h3>
+        <ul id="caseList" class="grid sm:grid-cols-2 gap-x-6 gap-y-4"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-24 lg:py-32 bg-surface">
+  <div class="max-w-3xl mx-auto px-5 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Preguntas frecuentes</span>
+      <h2 class="reveal font-display font-bold text-3xl sm:text-4xl">Todo lo que necesitás saber</h2>
+    </div>
+    <div id="faqList" class="flex flex-col gap-3"></div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="relative py-28 lg:py-36 overflow-hidden">
+  <div class="absolute inset-0 grad-brand -z-10"></div>
+  <div class="orbit-ring border-white/25 w-[420px] h-[420px] -top-40 -left-20 spin-slow"></div>
+  <div class="orbit-ring border-white/15 w-[260px] h-[260px] bottom-[-80px] right-[6%] spin-slow-rev"></div>
+  <div class="max-w-4xl mx-auto px-5 text-center relative">
+    <h2 class="reveal font-display font-bold text-4xl sm:text-5xl text-white leading-tight mb-6">¿Listo para delegar?</h2>
+    <p class="reveal text-lg text-white/85 max-w-xl mx-auto mb-10" style="transition-delay:.08s">Comenzá hoy mismo a ahorrar tiempo y hacer crecer tu negocio con Assistiva Tech.</p>
+    <div class="reveal flex flex-col sm:flex-row gap-4 justify-center" style="transition-delay:.16s">
+      <a href="#contacto" data-open-modal class="btn px-7 py-4 bg-white text-[var(--violet-700)] hover:-translate-y-0.5 shadow-xl">
+        Agendar una reunión gratuita
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a id="waCta" href="#" data-open-whatsapp-modal class="btn btn-whatsapp px-7 py-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.54a9.9 9.9 0 0 0 4.91 1.28h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2m0 1.8a8.06 8.06 0 0 1 5.72 2.38 8.07 8.07 0 0 1 2.36 5.73c0 4.47-3.64 8.1-8.1 8.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.05.9.9-2.98-.19-.31a8.03 8.03 0 0 1-1.24-4.32c0-4.47 3.64-8.1 8.03-8.2m-4.42 4.42c-.16 0-.43.06-.65.3-.22.24-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.72 2.7 4.22 3.73 2.08.85 2.5.68 2.95.64.45-.04 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.1-.22-.17-.45-.29-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.96-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.35-.76-1.84-.2-.48-.4-.42-.55-.42h-.47Z"/></svg>
+        Hablar por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-[var(--violet-950)] text-white pt-20 pb-8">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-12 pb-14">
+      <div class="lg:col-span-2">
+        <a href="#" class="flex items-center gap-2.5 mb-5">
+          <img src="assets/images/assistiva-logo.png" alt="Assistiva Tech" class="h-10 w-10 rounded-xl object-cover" />
+          <span class="font-display font-bold text-lg">Assistiva<span class="grad-text">Tech</span></span>
+        </a>
+        <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">Asistentes virtuales capacitadas para emprendedores, profesionales y empresas que quieren delegar con confianza y foco en resultados.</p>
+        <div class="flex items-center gap-3">
+          <a id="waFooter" href="#" data-open-whatsapp-modal aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.54a9.9 9.9 0 0 0 4.91 1.28h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2"/></svg></a>
+          <a href="https://instagram.com/assistivatech" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
+          <a href="https://linkedin.com/company/assistivatech" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5M3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.8V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.45-2.16 2.96V21h-4z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-display font-semibold mb-4 text-sm tracking-wide uppercase text-white/70">Servicios</h3>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li><a href="#servicios" class="hover:text-white transition-colors">Gestión de agenda</a></li>
+          <li><a href="#servicios" class="hover:text-white transition-colors">Atención al cliente</a></li>
+          <li><a href="#servicios" class="hover:text-white transition-colors">Redes sociales</a></li>
+          <li><a href="#servicios" class="hover:text-white transition-colors">Soporte comercial</a></li>
+          <li><a href="#servicios" class="hover:text-white transition-colors">Gestión de e-commerce</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display font-semibold mb-4 text-sm tracking-wide uppercase text-white/70">Nosotras</h3>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li><a href="#quienes-somos" class="hover:text-white transition-colors">Quiénes somos</a></li>
+          <li><a href="#como-trabajamos" class="hover:text-white transition-colors">Cómo trabajamos</a></li>
+          <li><a href="#sectores" class="hover:text-white transition-colors">Sectores</a></li>
+          <li><a href="#beneficios" class="hover:text-white transition-colors">Beneficios</a></li>
+          <li><a href="#faq" class="hover:text-white transition-colors">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display font-semibold mb-4 text-sm tracking-wide uppercase text-white/70">Contacto</h3>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li><a href="mailto:hola@assistivatech.com" class="hover:text-white transition-colors">hola@assistivatech.com</a></li>
+          <li><span id="waFooterText">+54 9 341 000-0000</span></li>
+          <li><a href="#contacto" data-open-modal class="hover:text-white transition-colors">Agendar una reunión</a></li>
+          <li>Rosario, Santa Fe, Argentina</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-7 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/45">
+      <p>© <span id="year"></span> Assistiva Tech. Todos los derechos reservados.</p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-white/80 transition-colors">Política de privacidad</a>
+        <a href="#" class="hover:text-white/80 transition-colors">Términos y condiciones</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== WHATSAPP FLOATING BUTTON ===================== -->
+<a id="waFab" href="#" data-open-whatsapp-modal aria-label="Hablar por WhatsApp" class="whatsapp-fab fixed bottom-6 right-5 z-40 w-15 h-15 sm:w-16 sm:h-16 rounded-full bg-[#1FAA59] flex items-center justify-center text-white" style="width:58px;height:58px;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="currentColor" style="position:relative;z-index:2"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.54a9.9 9.9 0 0 0 4.91 1.28h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2m0 1.8a8.06 8.06 0 0 1 5.72 2.38 8.07 8.07 0 0 1 2.36 5.73c0 4.47-3.64 8.1-8.1 8.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.05.9.9-2.98-.19-.31a8.03 8.03 0 0 1-1.24-4.32c0-4.47 3.64-8.1 8.03-8.2m-4.42 4.42c-.16 0-.43.06-.65.3-.22.24-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.72 2.7 4.22 3.73 2.08.85 2.5.68 2.95.64.45-.04 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.1-.22-.17-.45-.29-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.96-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.35-.76-1.84-.2-.48-.4-.42-.55-.42h-.47Z"/></svg>
+</a>
+
+<!-- Back to top -->
+<button id="backToTop" aria-label="Volver arriba" class="fixed bottom-6 left-5 z-40 w-12 h-12 rounded-full bg-surface-raised border border-c shadow-lg flex items-center justify-center hover:-translate-y-1 transition-transform">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<!-- ===================== CONTACT / SCHEDULE MODAL ===================== -->
+<div id="contactModal" class="fixed inset-0 z-[70] hidden">
+  <div id="modalOverlay" class="absolute inset-0 bg-[var(--violet-950)]/60 backdrop-blur-sm"></div>
+  <div class="relative min-h-full flex items-center justify-center p-4 sm:p-6">
+    <div class="bg-surface-raised rounded-[26px] max-w-4xl w-full grid lg:grid-cols-2 overflow-hidden shadow-2xl max-h-[92vh] overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="p-8 sm:p-10 grad-brand text-white flex flex-col justify-between" id="contacto">
+        <div>
+          <p class="text-white/70 text-sm font-medium mb-2">Contanos qué necesitás</p>
+          <h3 id="modalTitle" class="font-display font-bold text-2xl sm:text-3xl leading-tight mb-5">Agendemos una reunión gratuita de 20 minutos</h3>
+          <p class="text-white/80 text-sm leading-relaxed">Sin compromiso. Analizamos tu negocio y te proponemos la asistente ideal para empezar a delegar en pocos días.</p>
+        </div>
+        <ul class="mt-8 space-y-3 text-sm">
+          <li class="flex items-center gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> Respuesta en menos de 24hs</li>
+          <li class="flex items-center gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> Sin permanencia mínima</li>
+          <li class="flex items-center gap-2.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> Asistente asignada en días, no semanas</li>
+        </ul>
+        <a id="waModal" href="#" data-open-whatsapp-modal class="btn btn-whatsapp mt-8 py-3.5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.54a9.9 9.9 0 0 0 4.91 1.28h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2"/></svg>
+          Prefiero WhatsApp
+        </a>
+      </div>
+
+      <div class="p-8 sm:p-10 relative">
+        <button id="closeModalBtn" aria-label="Cerrar" class="absolute top-5 right-5 w-9 h-9 rounded-full hover:bg-surface-alt flex items-center justify-center text-lg">✕</button>
+
+        <div id="formWrap">
+          <form id="contactForm" novalidate class="flex flex-col gap-4 mt-2" action="https://formspree.io/f/mojgwodn" method="POST">
+            <input type="hidden" name="_subject" value="Nueva consulta desde la web de Assistiva Tech" />
+            <div>
+              <label for="fName" class="text-sm font-medium block mb-1.5">Nombre completo</label>
+              <input id="fName" name="name" type="text" class="field w-full px-4 py-3 text-sm" placeholder="Tu nombre" />
+              <p class="err text-xs text-[#E24C4C] mt-1 hidden">Ingresá tu nombre.</p>
+            </div>
+            <div>
+              <label for="fEmail" class="text-sm font-medium block mb-1.5">Email</label>
+              <input id="fEmail" name="email" type="email" class="field w-full px-4 py-3 text-sm" placeholder="tu@empresa.com" />
+              <p class="err text-xs text-[#E24C4C] mt-1 hidden">Ingresá un email válido.</p>
+            </div>
+            <div>
+              <label for="fPhone" class="text-sm font-medium block mb-1.5">Teléfono</label>
+              <input id="fPhone" name="phone" type="tel" class="field w-full px-4 py-3 text-sm" placeholder="+54 9 ..." />
+              <p class="err text-xs text-[#E24C4C] mt-1 hidden">Ingresá un teléfono válido.</p>
+            </div>
+            <div>
+              <label for="fMsg" class="text-sm font-medium block mb-1.5">¿En qué querés que te ayudemos?</label>
+              <textarea id="fMsg" name="message" rows="3" class="field w-full px-4 py-3 text-sm resize-none" placeholder="Contanos brevemente tu necesidad"></textarea>
+              <p class="err text-xs text-[#E24C4C] mt-1 hidden">Contanos brevemente qué necesitás.</p>
+            </div>
+            <button id="submitBtn" type="submit" class="btn btn-primary py-3.5 mt-2">Enviar solicitud</button>
+            <p id="submitError" class="text-xs text-[#E24C4C] text-center hidden">No pudimos enviar tu mensaje. Probá de nuevo o escribinos por WhatsApp.</p>
+            <p class="text-xs text-gray-500c text-center">Al enviar aceptás nuestra política de privacidad.</p>
+          </form>
+        </div>
+
+        <div id="formSuccess" class="hidden flex-col items-center justify-center text-center h-full py-14">
+          <div class="w-16 h-16 rounded-full grad-brand flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h4 class="font-display font-bold text-xl mb-2">¡Listo, recibimos tu mensaje!</h4>
+          <p class="text-ink-soft text-sm max-w-xs">Te vamos a contactar dentro de las próximas 24 horas hábiles para coordinar tu reunión.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== WHATSAPP QR MODAL ===================== -->
+<div id="qrModal" class="fixed inset-0 z-[70] hidden">
+  <div id="qrOverlay" class="absolute inset-0 bg-[var(--violet-950)]/60 backdrop-blur-sm"></div>
+  <div class="relative min-h-full flex items-center justify-center p-4 sm:p-6">
+    <div class="bg-surface-raised rounded-[26px] w-full max-w-sm p-7 sm:p-9 shadow-2xl relative text-center" role="dialog" aria-modal="true" aria-labelledby="qrModalTitle">
+      <button id="closeQrBtn" aria-label="Cerrar" class="absolute top-4 right-4 w-9 h-9 rounded-full hover:bg-surface-alt flex items-center justify-center text-lg">✕</button>
+
+      <div class="w-11 h-11 rounded-full bg-[#1FAA59]/12 flex items-center justify-center mx-auto mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#1FAA59"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.54a9.9 9.9 0 0 0 4.91 1.28h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2m0 1.8a8.06 8.06 0 0 1 5.72 2.38 8.07 8.07 0 0 1 2.36 5.73c0 4.47-3.64 8.1-8.1 8.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.05.9.9-2.98-.19-.31a8.03 8.03 0 0 1-1.24-4.32c0-4.47 3.64-8.1 8.03-8.2m-4.42 4.42c-.16 0-.43.06-.65.3-.22.24-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.72 2.7 4.22 3.73 2.08.85 2.5.68 2.95.64.45-.04 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.1-.22-.17-.45-.29-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.96-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.35-.76-1.84-.2-.48-.4-.42-.55-.42h-.47Z"/></svg>
+      </div>
+
+      <h3 id="qrModalTitle" class="font-display font-bold text-xl mb-2">Hablemos por WhatsApp</h3>
+      <p class="text-sm text-ink-soft mb-6">Escaneá el código con la cámara de tu celular para abrir la conversación.</p>
+
+      <div class="rounded-2xl border border-c bg-white p-4 inline-block">
+        <img src="assets/images/whatsapp-qr.png" alt="Código QR para chatear con Assistiva Tech por WhatsApp" class="w-48 h-48 sm:w-56 sm:h-56 object-contain" width="224" height="224" />
+      </div>
+
+      <button id="closeQrBtnBottom" class="btn btn-secondary w-full py-3 mt-7">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // ---------- WhatsApp QR modal ----------
+  const qrModal = document.getElementById("qrModal");
+  const openQrModal = (e) => {
+    if(e) e.preventDefault();
+    qrModal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  };
+  const closeQrModal = () => {
+    qrModal.classList.add("hidden");
+    document.body.style.overflow = "";
+  };
+  document.querySelectorAll("[data-open-whatsapp-modal]").forEach(btn=>btn.addEventListener("click", openQrModal));
+  document.getElementById("closeQrBtn").addEventListener("click", closeQrModal);
+  document.getElementById("closeQrBtnBottom").addEventListener("click", closeQrModal);
+  document.getElementById("qrOverlay").addEventListener("click", closeQrModal);
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape" && !qrModal.classList.contains("hidden")) closeQrModal(); });
+
+  // ---------- Icon set ----------
+  const ic = (paths, vb="0 0 24 24") => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb}" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths}</svg>`;
+  const ICONS = {
+    calendar: ic('<rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><circle cx="8.3" cy="14" r="1"/><circle cx="12" cy="14" r="1"/><circle cx="15.7" cy="14" r="1"/>'),
+    mail: ic('<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/>'),
+    chat: ic('<path d="M4 5h16v11H9l-5 4V5z"/><circle cx="8.5" cy="10.5" r=".9" fill="currentColor" stroke="none"/><circle cx="12" cy="10.5" r=".9" fill="currentColor" stroke="none"/><circle cx="15.5" cy="10.5" r=".9" fill="currentColor" stroke="none"/>'),
+    share: ic('<circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.3 10.7l7.4-3.4M8.3 13.3l7.4 3.4"/>'),
+    clipboard: ic('<rect x="5" y="4.5" width="14" height="16" rx="2.5"/><rect x="9" y="3" width="6" height="3" rx="1.2"/><path d="M8.5 11h7M8.5 14.5h7M8.5 18h4.5"/>'),
+    cart: ic('<circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/><path d="M3 4h2.4l1.9 10.4a2 2 0 0 0 2 1.6h7.5a2 2 0 0 0 2-1.6l1.3-6.9H6.2"/>'),
+    database: ic('<ellipse cx="12" cy="6" rx="7.5" ry="2.7"/><path d="M4.5 6v6c0 1.5 3.3 2.7 7.5 2.7s7.5-1.2 7.5-2.7V6"/><path d="M4.5 12v6c0 1.5 3.3 2.7 7.5 2.7s7.5-1.2 7.5-2.7v-6"/>'),
+    handshake: ic('<path d="M2.5 12.5l4-4 4.2 4.2a1.8 1.8 0 0 1 0 2.5v0a1.8 1.8 0 0 1-2.5 0"/><path d="M21.5 12.5l-4-4-6.3 6.3a1.8 1.8 0 0 0 0 2.5v0a1.8 1.8 0 0 0 2.5 0"/><path d="M9.5 14.7l1.9 1.9a1.8 1.8 0 0 0 2.5 0v0M12.7 12l2 2"/>'),
+    folder: ic('<path d="M3.5 6.5A1.5 1.5 0 0 1 5 5h4.3l1.7 2h8a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5v-11z"/>'),
+    search: ic('<circle cx="10.8" cy="10.8" r="6.3"/><path d="M20 20l-4.4-4.4"/>'),
+    users: ic('<circle cx="8.5" cy="8" r="3"/><circle cx="16.3" cy="9.3" r="2.4"/><path d="M2.8 19c.6-3.2 2.9-5 5.7-5s5.1 1.8 5.7 5"/><path d="M14.8 14.5c2.2.2 4 1.8 4.5 4.5"/>'),
+    heart: ic('<path d="M12 20s-7.5-4.6-9.6-9.2C1 7.4 3 4.2 6.4 4c2 0 3.7 1 5.6 3.2C13.9 5 15.6 4 17.6 4 21 4.2 23 7.4 21.6 10.8 19.5 15.4 12 20 12 20z"/>'),
+    scale: ic('<path d="M12 3v18M6 3h12"/><path d="M6 3L3 9.5a3 3 0 0 0 6 0L6 3z"/><path d="M18 3l-3 6.5a3 3 0 0 0 6 0L18 3z"/><path d="M8 21h8"/>'),
+    home: ic('<path d="M4 11.5L12 4l8 7.5"/><path d="M6 10v9a1 1 0 0 0 1 1h3v-6h4v6h3a1 1 0 0 0 1-1v-9"/>'),
+    megaphone: ic('<path d="M3 10v4a1 1 0 0 0 1 1h2l1.6 5H10l-1-5h1L20 18V6l-9.4 3H6a1 1 0 0 0-1 1z"/>'),
+    bag: ic('<path d="M6 8h12l1 12.5H5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>'),
+    briefcase: ic('<rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/>'),
+    rocket: ic('<path d="M12 15c3.5-1 6-4.6 6-9.5C13 6 9.5 8.5 8.5 12c0 0-3 .5-4.5 4C7 15.5 9 17.5 9 17.5c3.5-1.5 4-4.5 4-4.5z"/><circle cx="14.3" cy="9.7" r="1.4"/><path d="M8.5 15.5L5 19M12 15c1 1.5-.5 3-2.5 4"/>'),
+    building: ic('<rect x="4" y="3.5" width="10" height="17" rx="1.5"/><rect x="14" y="9" width="6" height="11.5" rx="1.5"/><path d="M7 7h1M11 7h1M7 11h1M11 11h1M7 15h1M11 15h1"/>'),
+    layers: ic('<path d="M12 3.5l8 4.3-8 4.3-8-4.3 8-4.3z"/><path d="M4 12.2l8 4.3 8-4.3M4 15.9l8 4.3 8-4.3"/>'),
+    server: ic('<rect x="3.5" y="4" width="17" height="6" rx="1.6"/><rect x="3.5" y="14" width="17" height="6" rx="1.6"/><circle cx="7" cy="7" r=".9" fill="currentColor" stroke="none"/><circle cx="7" cy="17" r=".9" fill="currentColor" stroke="none"/>'),
+    clock: ic('<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>'),
+    trendUp: ic('<path d="M3 17l6-6 4 4 8-8"/><path d="M15 6h6v6"/>'),
+    target: ic('<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.7"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/>'),
+    shield: ic('<path d="M12 3l7 3v5.5c0 4.6-3 8-7 9.5-4-1.5-7-4.9-7-9.5V6l7-3z"/><path d="M9 12l2 2 4-4"/>'),
+    sliders: ic('<path d="M5 5v14M12 5v6M19 5v10"/><circle cx="5" cy="14" r="2"/><circle cx="12" cy="14.5" r="2" transform="rotate(0)"/><circle cx="19" cy="18" r="2"/>'),
+    laptop: ic('<rect x="4" y="5" width="16" height="10.5" rx="1.6"/><path d="M2.5 19.5h19"/>'),
+    badge: ic('<circle cx="12" cy="10" r="6.5"/><path d="M9 10l2 2 4-4"/><path d="M9 15.5L8 21l4-2 4 2-1-5.5"/>'),
+    repeat: ic('<path d="M4 7h11a4 4 0 0 1 4 4v1"/><path d="M20 17H9a4 4 0 0 1-4-4v-1"/><path d="M7 4L4 7l3 3M17 20l3-3-3-3"/>'),
+    puzzle: ic('<path d="M9 4.5h4v2.3a1.7 1.7 0 0 0 3.4 0V4.5H19v4h-2.3a1.7 1.7 0 0 0 0 3.4H19v4h-3v-2.3a1.7 1.7 0 0 0-3.4 0V19h-4v-2.3a1.7 1.7 0 0 0-3.4 0V19H2v-4h2.3a1.7 1.7 0 0 0 0-3.4H2v-4h3v2.3a1.7 1.7 0 0 0 3.4 0V4.5z"/>'),
+    sparkles: ic('<path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/>'),
+    award: ic('<circle cx="12" cy="8.5" r="5"/><path d="M9 12.8L7.5 20l4.5-2.3L16.5 20l-1.5-7.2"/>'),
+    coins: ic('<ellipse cx="9" cy="7" rx="6" ry="3"/><path d="M3 7v5c0 1.7 2.7 3 6 3s6-1.3 6-3V7"/><path d="M9 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><ellipse cx="15" cy="12" rx="6" ry="3"/>'),
+  };
+
+  // ---------- Data: Servicios ----------
+  const services = [
+    ["calendar","Gestión de agenda","Organizamos reuniones, turnos y recordatorios para que nunca pierdas tiempo coordinando."],
+    ["mail","Administración de correos","Bandeja de entrada ordenada, respuestas a tiempo y prioridades claras cada día."],
+    ["chat","Atención al cliente","Respuestas rápidas y cordiales en cada canal, cuidando la experiencia de tus clientes."],
+    ["share","Gestión de redes sociales","Calendario de contenido, publicaciones y respuesta a mensajes en tus redes."],
+    ["clipboard","Organización administrativa","Procesos, planillas y tareas diarias bajo control, sin que tengas que estar encima."],
+    ["cart","Gestión de e-commerce","Carga de productos, stock, pedidos y seguimiento de envíos en tu tienda online."],
+    ["database","Carga de datos","Migración, actualización y limpieza de información en tus sistemas y planillas."],
+    ["handshake","Soporte comercial","Seguimiento de leads, presupuestos y postventa para que no se te escape ninguna venta."],
+    ["layers","Gestión de proyectos","Planificación, seguimiento de tareas y coordinación de equipos en un solo lugar."],
+    ["folder","Organización documental","Archivo, clasificación y resguardo de documentos siempre accesibles."],
+    ["search","Investigación de mercado","Relevamiento de competencia, proveedores y oportunidades para decisiones informadas."],
+    ["users","Coordinación de reuniones","Invitaciones, agendas y minutas para que cada reunión sea productiva."],
+  ];
+  document.getElementById("servicesGrid").innerHTML = services.map(([icon,title,desc],i)=>`
+    <div class="card reveal p-7" style="transition-delay:${(i%3)*0.06}s">
+      <div class="icon-badge mb-5">${ICONS[icon]}</div>
+      <h3 class="font-display font-semibold text-lg mb-2">${title}</h3>
+      <p class="text-sm text-ink-soft leading-relaxed">${desc}</p>
+    </div>`).join("");
+
+  // ---------- Data: Sectores ----------
+  const sectors = [
+    ["rocket","Emprendedores","Atendemos consultas y guiamos cada conversación hacia la venta, para que no se te escape ningún cliente."],
+    ["bag","E-commerce","Optimizamos la atención en WhatsApp e Instagram y acompañamos al comprador hasta cerrar el pedido."],
+    ["heart","Gastronomía","Gestionamos pedidos, consultas de menú y reservas con respuestas rápidas y cercanas."],
+    ["briefcase","Profesionales independientes","Coordinamos consultas y turnos, dándole a cada cliente potencial una respuesta ágil y profesional."],
+    ["sliders","Servicios","Ordenamos el proceso de atención comercial para que cada consulta avance hacia el cierre."],
+    ["building","Comercios","Atendemos y asesoramos a tus clientes en el momento justo, mejorando la conversión de cada consulta."],
+    ["target","PYMES","Estructuramos el proceso de ventas y atención al cliente para que crezca de forma ordenada."],
+  ];
+  document.getElementById("sectorsGrid").innerHTML = sectors.map(([icon,title,desc],i)=>`
+    <div class="card reveal p-6 text-center flex flex-col items-center" style="transition-delay:${(i%5)*0.05}s">
+      <div class="icon-badge mb-4">${ICONS[icon]}</div>
+      <h3 class="font-display font-semibold text-[0.95rem] mb-1.5">${title}</h3>
+      <p class="text-xs text-ink-soft leading-relaxed">${desc}</p>
+    </div>`).join("");
+
+  // ---------- Data: Timeline ----------
+  const steps = [
+    ["chat","Nos contás qué necesitás","Una charla breve para entender tus tareas, prioridades y forma de trabajo."],
+    ["search","Analizamos tu negocio","Revisamos procesos y detectamos qué se puede delegar sin fricción."],
+    ["target","Armamos la estrategia ideal","Diseñamos el plan de atención y ventas a medida de tu negocio y tu forma de comunicarte."],
+    ["rocket","Comenzás a delegar tareas","Arrancás a trabajar con seguimiento cercano desde el primer día."],
+  ];
+  document.getElementById("timelineGrid").innerHTML = steps.map(([icon,title,desc],i)=>`
+    <div class="reveal relative bg-surface card p-7" style="transition-delay:${i*0.1}s">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="icon-badge">${ICONS[icon]}</div>
+        <span class="step-num text-3xl text-[var(--lilac-300)]">0${i+1}</span>
+      </div>
+      <h3 class="font-display font-semibold text-lg mb-2">${title}</h3>
+      <p class="text-sm text-ink-soft leading-relaxed">${desc}</p>
+    </div>`).join("");
+
+  // ---------- Data: Beneficios ----------
+  const benefits = [
+    ["clock","Ahorrá tiempo","Recuperás horas cada semana para enfocarte en decisiones que hacen crecer tu negocio."],
+    ["coins","Reducí costos","Menos costo que un empleado full-time, sin cargas laborales adicionales."],
+    ["trendUp","Mayor productividad","Tus tareas avanzan en paralelo, sin esperar a que tengas tiempo para hacerlas."],
+    ["heart","Atención personalizada","Una asistente que conoce tu negocio y se adapta a tu forma de trabajar."],
+    ["badge","Equipo capacitado","Profesionales seleccionadas y formadas para responder con criterio."],
+    ["laptop","Trabajo remoto","Coordinás todo de forma 100% digital, sin sumar espacio ni infraestructura."],
+    ["sliders","Flexibilidad","Sumás o ajustás horas según la temporada y las necesidades de tu negocio."],
+    ["layers","Escalabilidad","Crecés sumando asistentes a medida que tu operación lo requiere."],
+  ];
+  document.getElementById("benefitsGrid").innerHTML = benefits.map(([icon,title,desc],i)=>`
+    <div class="card reveal p-6" style="transition-delay:${(i%4)*0.06}s">
+      <div class="icon-badge mb-4">${ICONS[icon]}</div>
+      <h3 class="font-display font-semibold mb-1.5">${title}</h3>
+      <p class="text-sm text-ink-soft leading-relaxed">${desc}</p>
+    </div>`).join("");
+
+  // ---------- Data: Por qué elegirnos ----------
+  const indicators = [
+    ["badge","Compromiso asegurado","Nos involucramos en cada proyecto con responsabilidad, dedicación y seguimiento constante."],
+    ["chat","Gestión precisa y clara","Organizamos procesos de atención y ventas para que cada interacción con el cliente sea simple, eficiente y cercana."],
+  ];
+  document.getElementById("indicatorsGrid").innerHTML = indicators.map(([icon,title,desc])=>`
+    <div class="card p-6 text-center flex flex-col items-center">
+      <div class="icon-badge mb-3">${ICONS[icon]}</div>
+      <h3 class="font-display font-semibold text-sm mb-1.5">${title}</h3>
+      <p class="text-xs text-gray-500c leading-snug">${desc}</p>
+    </div>`).join("");
+
+  const whyUs = [
+    ["handshake","Trabajo 100% propio","Ejecutamos cada tarea nosotras mismas, sin asistentes externas ni derivaciones a terceros."],
+    ["chat","Comunicación constante","Canales claros y disponibles para que siempre sepas en qué está tu proyecto."],
+    ["clock","Flexibilidad horaria","Adaptamos los horarios de trabajo a los tuyos y a los de tu negocio."],
+    ["repeat","Seguimiento permanente","Revisamos el desempeño y ajustamos el proceso para que siempre funcione mejor."],
+    ["puzzle","Adaptación a cada empresa","Nos integramos a tus herramientas, procesos y forma de comunicarte."],
+    ["sparkles","Soluciones personalizadas","Ningún plan es igual a otro: armamos el servicio a medida de lo que necesitás."],
+    ["award","Compromiso con resultados","Medimos el impacto real de delegar, no solo las horas trabajadas."],
+  ];
+  document.getElementById("whyUsGrid").innerHTML = whyUs.map(([icon,title,desc],i)=>`
+    <div class="card reveal p-6 flex gap-4" style="transition-delay:${(i%2)*0.08}s">
+      <div class="icon-badge shrink-0">${ICONS[icon]}</div>
+      <div>
+        <h3 class="font-display font-semibold mb-1.5">${title}</h3>
+        <p class="text-sm text-ink-soft leading-relaxed">${desc}</p>
+      </div>
+    </div>`).join("");
+
+  // ---------- Data: Caso real Saboreé ----------
+  const caseItems = [
+    "Entrevista personalizada con la dueña del emprendimiento",
+    "Relevamiento de información",
+    "Organización de productos",
+    "Optimización del catálogo de WhatsApp Business",
+    "Protocolos de atención para WhatsApp Business",
+    "Protocolos de atención para Instagram",
+    "Respuestas orientadas a dirigir la conversación hacia la venta",
+    "Estrategia para derivar consultas de Instagram a WhatsApp",
+    "Organización del flujo completo de atención al cliente",
+  ];
+  document.getElementById("caseList").innerHTML = caseItems.map(text=>`
+    <li class="flex items-start gap-2.5">
+      <span class="icon-badge shrink-0" style="width:28px;height:28px;border-radius:8px;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+      </span>
+      <span class="text-sm text-ink-soft leading-snug pt-0.5">${text}</span>
+    </li>`).join("");
+
+  // ---------- Data: FAQ ----------
+  const faqs = [
+    ["¿Qué tareas puede realizar?","Desde gestión de agenda y correos hasta atención al cliente, redes sociales, e-commerce, carga de datos y soporte administrativo general."],
+    ["¿Cómo comienza el proceso?","Agendás una reunión gratuita, analizamos tu negocio y en pocos días te presentamos la estrategia de trabajo ideal para empezar."],
+    ["¿Cómo es el seguimiento del trabajo?","Hacemos check-ins periódicos y medimos resultados junto a vos, ajustando el proceso cada vez que hace falta."],
+  ];
+  document.getElementById("faqList").innerHTML = faqs.map(([q,a],i)=>`
+    <details class="faq-item card reveal px-6" style="transition-delay:${(i%4)*0.05}s">
+      <summary class="flex items-center justify-between gap-4 py-5 font-display font-medium">
+        <span>${q}</span>
+        <svg class="chev shrink-0 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <div class="faq-body">
+        <p class="text-sm text-ink-soft leading-relaxed pb-5 pr-8">${a}</p>
+      </div>
+    </details>`).join("");
+
+  // ---------- Navbar scroll state ----------
+  const navInner = document.getElementById("navInner");
+  const onScrollNav = () => {
+    if(window.scrollY > 24){
+      navInner.style.background = "var(--surface)";
+      navInner.style.boxShadow = "0 12px 30px -18px hsl(var(--shadow-color)/.6)";
+      navInner.style.borderBottom = "1px solid var(--border)";
+    } else {
+      navInner.style.background = "transparent";
+      navInner.style.boxShadow = "none";
+      navInner.style.borderBottom = "1px solid transparent";
+    }
+    const btt = document.getElementById("backToTop");
+    btt.classList.toggle("show", window.scrollY > 700);
+  };
+  document.addEventListener("scroll", onScrollNav, { passive:true });
+  onScrollNav();
+
+  // ---------- Mobile menu ----------
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menuBtn = document.getElementById("menuBtn");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
+  const openMenu = () => { mobileMenu.classList.remove("hidden"); requestAnimationFrame(()=>mobileMenu.classList.add("open")); document.body.style.overflow="hidden"; menuBtn.setAttribute("aria-expanded","true"); };
+  const closeMenu = () => { mobileMenu.classList.remove("open"); document.body.style.overflow=""; menuBtn.setAttribute("aria-expanded","false"); setTimeout(()=>mobileMenu.classList.add("hidden"),450); };
+  menuBtn.addEventListener("click", openMenu);
+  closeMenuBtn.addEventListener("click", closeMenu);
+  document.querySelectorAll(".mobile-link").forEach(l=>l.addEventListener("click", closeMenu));
+
+  // ---------- Dark mode ----------
+  const root = document.documentElement;
+  const sunIcon = document.getElementById("iconSun");
+  const moonIcon = document.getElementById("iconMoon");
+  const syncIcons = () => {
+    const dark = root.classList.contains("dark");
+    sunIcon.classList.toggle("hidden", dark);
+    moonIcon.classList.toggle("hidden", !dark);
+  };
+  if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches){ root.classList.add("dark"); }
+  syncIcons();
+  const toggleDark = () => { root.classList.toggle("dark"); syncIcons(); };
+  document.getElementById("darkToggle").addEventListener("click", toggleDark);
+  document.getElementById("darkToggleMobile").addEventListener("click", toggleDark);
+
+  // ---------- Back to top ----------
+  document.getElementById("backToTop").addEventListener("click", ()=> window.scrollTo({top:0, behavior:"smooth"}));
+
+  // ---------- Scroll reveal ----------
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold:0.15, rootMargin:"0px 0px -40px 0px" });
+  document.querySelectorAll(".reveal, .reveal-scale").forEach(el=>observer.observe(el));
+
+  // ---------- Hero task list animation ----------
+  document.querySelectorAll("#taskList .task-row[data-delay]").forEach(row=>{
+    const delay = parseInt(row.dataset.delay,10);
+    if(delay > 0){
+      setTimeout(()=> row.classList.add("done"), 900 + delay);
+    }
+  });
+
+  // ---------- FAQ accordion (smooth height, single open) ----------
+  document.querySelectorAll(".faq-item").forEach(item=>{
+    const body = item.querySelector(".faq-body");
+    body.style.height = "0px";
+    item.addEventListener("toggle", ()=>{
+      if(item.open){
+        document.querySelectorAll(".faq-item[open]").forEach(other=>{
+          if(other !== item){ other.querySelector(".faq-body").style.height="0px"; other.removeAttribute("open"); }
+        });
+        body.style.height = body.scrollHeight + "px";
+      } else {
+        body.style.height = "0px";
+      }
+    });
+  });
+
+  // ---------- Contact modal ----------
+  const modal = document.getElementById("contactModal");
+  const openModal = (e) => {
+    if(e) e.preventDefault();
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    document.getElementById("fName").focus({preventScroll:true});
+  };
+  const closeModal = () => {
+    modal.classList.add("hidden");
+    document.body.style.overflow = "";
+  };
+  document.querySelectorAll("[data-open-modal]").forEach(btn=>btn.addEventListener("click", openModal));
+  document.getElementById("closeModalBtn").addEventListener("click", closeModal);
+  document.getElementById("modalOverlay").addEventListener("click", closeModal);
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape" && !modal.classList.contains("hidden")) closeModal(); });
+
+  // ---------- Form validation ----------
+  const form = document.getElementById("contactForm");
+  const showError = (input, show) => {
+    input.classList.toggle("field-error", show);
+    const err = input.parentElement.querySelector(".err");
+    if(err) err.classList.toggle("hidden", !show);
+  };
+  const submitBtn = document.getElementById("submitBtn");
+  const submitError = document.getElementById("submitError");
+
+  form.addEventListener("submit", async (e)=>{
+    e.preventDefault();
+    const name = document.getElementById("fName");
+    const email = document.getElementById("fEmail");
+    const phone = document.getElementById("fPhone");
+    const msg = document.getElementById("fMsg");
+    let valid = true;
+
+    if(name.value.trim().length < 2){ showError(name, true); valid=false; } else showError(name,false);
+    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+    if(!emailOk){ showError(email, true); valid=false; } else showError(email,false);
+    const phoneOk = phone.value.trim().length >= 6 && /^[0-9+\s()-]+$/.test(phone.value.trim());
+    if(!phoneOk){ showError(phone, true); valid=false; } else showError(phone,false);
+    if(msg.value.trim().length < 5){ showError(msg, true); valid=false; } else showError(msg,false);
+
+    if(!valid) return;
+
+    submitError.classList.add("hidden");
+    submitBtn.disabled = true;
+    const originalLabel = submitBtn.textContent;
+    submitBtn.textContent = "Enviando...";
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+      });
+
+      if(response.ok){
+        document.getElementById("formWrap").classList.add("hidden");
+        document.getElementById("formSuccess").classList.remove("hidden");
+        document.getElementById("formSuccess").classList.add("flex");
+        form.reset();
+      } else {
+        submitError.classList.remove("hidden");
+      }
+    } catch (err) {
+      submitError.classList.remove("hidden");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalLabel;
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
