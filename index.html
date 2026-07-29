@@ -639,7 +639,7 @@
               <textarea id="fMsg" name="message" rows="3" class="field w-full px-4 py-3 text-sm resize-none" placeholder="Contanos brevemente tu necesidad"></textarea>
               <p class="err text-xs text-[#E24C4C] mt-1 hidden">Contanos brevemente qué necesitás.</p>
             </div>
-            <button id="submitBtn" type="submit" class="btn btn-primary py-3.5 mt-2">Enviar solicitud</button>
+            <button id="submitBtn" type="submit" class="btn btn-primary py-3.5 mt-2">Enviar formulario</button>
             <p id="submitError" class="text-xs text-[#E24C4C] text-center hidden">No pudimos enviar tu mensaje. Probá de nuevo o escribinos por WhatsApp.</p>
             <p class="text-xs text-gray-500c text-center">Al enviar aceptás nuestra política de privacidad.</p>
           </form>
@@ -764,11 +764,10 @@
   const sectors = [
     ["rocket","Emprendedores","Atendemos consultas y guiamos cada conversación hacia la venta, para que no se te escape ningún cliente."],
     ["bag","E-commerce","Optimizamos la atención en WhatsApp e Instagram y acompañamos al comprador hasta cerrar el pedido."],
-    ["heart","Gastronomía","Gestionamos pedidos, consultas de menú y reservas con respuestas rápidas y cercanas."],
     ["briefcase","Profesionales independientes","Coordinamos consultas y turnos, dándole a cada cliente potencial una respuesta ágil y profesional."],
     ["sliders","Servicios","Ordenamos el proceso de atención comercial para que cada consulta avance hacia el cierre."],
     ["building","Comercios","Atendemos y asesoramos a tus clientes en el momento justo, mejorando la conversión de cada consulta."],
-    ["target","PYMES","Estructuramos el proceso de ventas y atención al cliente para que crezca de forma ordenada."],
+    ["target","MyPyME","Estructuramos el proceso de ventas y atención al cliente para que crezca de forma ordenada."],
   ];
   document.getElementById("sectorsGrid").innerHTML = sectors.map(([icon,title,desc],i)=>`
     <div class="card reveal p-6 text-center flex flex-col items-center" style="transition-delay:${(i%5)*0.05}s">
@@ -780,7 +779,7 @@
   // ---------- Data: Timeline ----------
   const steps = [
     ["chat","Nos contás qué necesitás","Una charla breve para entender tus tareas, prioridades y forma de trabajo."],
-    ["search","Analizamos tu negocio","Revisamos procesos y detectamos qué se puede delegar sin fricción."],
+    ["search","Analizamos tu negocio","Analizamos detectamos qué se puede delegar."],
     ["target","Armamos la estrategia ideal","Diseñamos el plan de atención y ventas a medida de tu negocio y tu forma de comunicarte."],
     ["rocket","Comenzás a delegar tareas","Arrancás a trabajar con seguimiento cercano desde el primer día."],
   ];
@@ -797,10 +796,8 @@
   // ---------- Data: Beneficios ----------
   const benefits = [
     ["clock","Ahorrá tiempo","Recuperás horas cada semana para enfocarte en decisiones que hacen crecer tu negocio."],
-    ["coins","Reducí costos","Menos costo que un empleado full-time, sin cargas laborales adicionales."],
     ["trendUp","Mayor productividad","Tus tareas avanzan en paralelo, sin esperar a que tengas tiempo para hacerlas."],
     ["heart","Atención personalizada","Una asistente que conoce tu negocio y se adapta a tu forma de trabajar."],
-    ["badge","Equipo capacitado","Profesionales seleccionadas y formadas para responder con criterio."],
     ["laptop","Trabajo remoto","Coordinás todo de forma 100% digital, sin sumar espacio ni infraestructura."],
     ["sliders","Flexibilidad","Sumás o ajustás horas según la temporada y las necesidades de tu negocio."],
     ["layers","Escalabilidad","Crecés sumando asistentes a medida que tu operación lo requiere."],
@@ -825,7 +822,7 @@
     </div>`).join("");
 
   const whyUs = [
-    ["handshake","Trabajo 100% propio","Ejecutamos cada tarea nosotras mismas, sin asistentes externas ni derivaciones a terceros."],
+    ["handshake","Trabajo 100% propio","Ejecutamos cada tarea nosotras mismas, sin asistentes externos ni derivaciones a terceros."],
     ["chat","Comunicación constante","Canales claros y disponibles para que siempre sepas en qué está tu proyecto."],
     ["clock","Flexibilidad horaria","Adaptamos los horarios de trabajo a los tuyos y a los de tu negocio."],
     ["repeat","Seguimiento permanente","Revisamos el desempeño y ajustamos el proceso para que siempre funcione mejor."],
