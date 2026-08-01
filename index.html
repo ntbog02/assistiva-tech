@@ -64,7 +64,7 @@
     --lilac-300:#C4B5FD;
     --lilac-200:#DDD6FE;
     --lilac-100:#EFEAFD;
-    --surface:#FFFFFF;
+    --surface:#ffffffec;
     --surface-alt:#F8F6FC;
     --surface-raised:#FFFFFF;
     --ink:#1B1530;
@@ -219,20 +219,20 @@
       </a>
 
       <nav class="hidden lg:flex items-center gap-8" aria-label="Navegación principal">
-        <a href="#quienes-somos" class="navlink">Nosotras</a>
+        <!--<a href="#quienes-somos" class="navlink">Nosotras</a>-->
         <a href="#servicios" class="navlink">Servicios</a>
         <a href="#sectores" class="navlink">Sectores</a>
         <a href="#como-trabajamos" class="navlink">Cómo trabajamos</a>
-        <a href="#beneficios" class="navlink">Beneficios</a>
+        <!--<a href="#beneficios" class="navlink">Beneficios</a>-->
         <a href="#faq" class="navlink">Preguntas</a>
       </nav>
 
       <div class="hidden lg:flex items-center gap-3">
-        <button id="darkToggle" aria-label="Cambiar tema claro/oscuro" class="w-10 h-10 rounded-full border border-c flex items-center justify-center hover:border-[var(--violet-500)] transition-colors">
+        <button id="darkToggle" aria-label="Cambiar tema claro/oscuro" class="hidden" w-10 h-10 rounded-full border border-c flex items-center justify-center hover:border-[var(--violet-500)] transition-colors">
           <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
           <svg id="iconMoon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
         </button>
-        <a href="#contacto" data-open-modal class="btn btn-primary px-5 py-2.5 text-sm">Solicita un diagnostico gratuito</a>
+        <a href="#contacto" data-open-modal class="hidden" btn btn-primary px-5 py-2.5 text-sm">Solicita un diagnostico gratuito</a>
       </div>
 
       <button id="menuBtn" class="lg:hidden w-11 h-11 flex flex-col items-center justify-center gap-[5px]" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
@@ -269,7 +269,7 @@
 
 <main id="main">
 <!-- ===================== HERO ===================== -->
-<section class="relative min-h-screen flex items-center overflow-hidden pt-28 pb-16 lg:pt-24">
+<section class="relative min-h-screen flex items-center overflow-hidden pt-28 pb-16 lg:pt-24 shadow-lg border border-gray-100">
   <div class="absolute inset-0 -z-10 bg-surface-alt"></div>
   <div class="blob w-[520px] h-[520px] -top-40 -left-32" style="background:radial-gradient(circle,var(--violet-500),transparent 70%)"></div>
   <div class="blob w-[460px] h-[460px] top-20 -right-24" style="background:radial-gradient(circle,var(--indigo-500),transparent 70%)"></div>
@@ -279,12 +279,7 @@
   <div class="max-w-7xl mx-auto px-5 lg:px-8 w-full">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <div>
-        <div class="reveal inline-flex items-center gap-2 bg-surface border border-c rounded-full pl-1.5 pr-4 py-1.5 text-sm font-medium text-ink-soft mb-7 shadow-sm">
-          <span class="w-6 h-6 rounded-full grad-brand flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
-          </span>
-          Mejoras la atención · Mejoran tus ventas.
-        </div>
+       
 
         <h1 class="reveal font-display font-bold leading-[1.05] text-[2.6rem] sm:text-6xl tracking-tight">
           Convertimos cada consulta <span class="grad-text">en una oportunidad de venta.</span>
@@ -302,35 +297,22 @@
           <a href="#servicios" class="btn btn-secondary px-7 py-4">Ver servicios</a>
         </div>
 
-        <div class="reveal flex flex-wrap items-center gap-6 mt-10 text-sm text-gray-500c" style="transition-delay:.24s">
-          <div class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--violet-600)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg> Equipo propio, sin intermediarios</div>
-          <div class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--violet-600)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg> Trato cercano y personalizado</div>
-        </div>
+      
       </div>
 
       <!-- Visual: brand logo panel + animated task card -->
       <div class="relative reveal-scale h-[420px] sm:h-[480px]" style="transition-delay:.1s">
-        <div class="absolute right-0 top-2 w-[78%] sm:w-[72%] h-[78%] rounded-[var(--radius-lg)] overflow-hidden shadow-2xl float-slower bg-white/80 border border-c flex items-center justify-center p-4 sm:p-6">
-          <img src="assets/images/assistiva-logo.png" alt="Assistiva Tech" class="w-full h-full object-contain" width="500" height="400"/>
-        </div>
+        
 
-        <div class="task-card absolute left-0 bottom-2 w-[72%] sm:w-[64%] p-5 float-slow">
-          <div class="flex items-center justify-between mb-3">
-            <span class="text-xs font-semibold uppercase tracking-wide text-gray-500c">Hoy delegaste</span>
-            <span class="text-xs font-semibold grad-text">4/5</span>
-          </div>
-          <div id="taskList" class="flex flex-col">
-            <div class="task-row" data-delay="300"><span class="task-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span class="task-label text-sm">Responder mensajes pendientes</span></div>
-            <div class="task-row" data-delay="900"><span class="task-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span class="task-label text-sm">Agendar clientes</span></div>
-            <div class="task-row" data-delay="1500"><span class="task-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span class="task-label text-sm">Actualizar Instagram</span></div>
-            <div class="task-row" data-delay="2100"><span class="task-check"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span class="task-label text-sm">Cargar pedidos en la tienda</span></div>
-            <div class="task-row" data-delay="0"><span class="task-check"></span><span class="task-label text-sm">Vos: enfocarte en crecer</span></div>
-          </div>
-        </div>
+<div class="absolute inset-0 flex items-center justify-center overflow-hidden rounded-3xl">
+    <img
+        src="assets/images/imagen-hero.JFIF.png"
+        alt="Atención al cliente de Assistiva Tech"
+        class="w-full h-full object-cover"
+    />
+</div>
 
-        <div class="absolute -right-3 -bottom-3 sm:-right-4 sm:-bottom-4 w-16 h-16 sm:w-20 sm:h-20 rounded-2xl grad-brand shadow-xl flex items-center justify-center text-white float-slow" style="animation-delay:-2s">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -339,33 +321,14 @@
 <!-- ===================== QUIENES SOMOS ===================== -->
 <section id="quienes-somos" class="py-24 lg:py-32 bg-surface">
   <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="reveal order-2 lg:order-1 relative">
-      <svg viewBox="0 0 460 420" class="w-full h-auto" role="img" aria-label="Ilustración de red de trabajo remoto colaborativo">
-        <defs>
-          <linearGradient id="illGrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="var(--violet-700)"/>
-            <stop offset="100%" stop-color="var(--indigo-500)"/>
-          </linearGradient>
-        </defs>
-        <circle cx="230" cy="210" r="150" fill="var(--lilac-100)"/>
-        <circle cx="230" cy="210" r="112" fill="none" stroke="var(--lilac-300)" stroke-width="1.5" stroke-dasharray="3 7"/>
-        <rect x="150" y="150" width="160" height="112" rx="16" fill="var(--surface)" stroke="var(--border)" stroke-width="2"/>
-        <rect x="168" y="172" width="60" height="8" rx="4" fill="url(#illGrad)"/>
-        <rect x="168" y="190" width="100" height="6" rx="3" fill="var(--border)"/>
-        <rect x="168" y="204" width="80" height="6" rx="3" fill="var(--border)"/>
-        <rect x="168" y="228" width="46" height="18" rx="9" fill="url(#illGrad)"/>
-        <circle cx="115" cy="120" r="30" fill="url(#illGrad)"/>
-        <circle cx="115" cy="120" r="30" fill="none"/>
-        <circle cx="350" cy="130" r="22" fill="var(--indigo-500)" opacity=".85"/>
-        <circle cx="360" cy="300" r="26" fill="var(--violet-500)" opacity=".85"/>
-        <circle cx="95" cy="300" r="18" fill="var(--lilac-300)"/>
-        <path d="M115 120 L150 180" stroke="var(--lilac-300)" stroke-width="2"/>
-        <path d="M350 130 L300 175" stroke="var(--lilac-300)" stroke-width="2"/>
-        <path d="M360 300 L305 250" stroke="var(--lilac-300)" stroke-width="2"/>
-        <path d="M95 300 L165 250" stroke="var(--lilac-300)" stroke-width="2"/>
-      </svg>
-    </div>
-    <div class="order-1 lg:order-2">
+<div class="reveal order-2 lg:order-1 relative flex justify-center">
+    <img
+        src="assets/images/img-pqelegirnos.png"
+        alt="Equipo de Assistiva Tech"
+        class="w-full max-w-md lg:max-w-lg h-auto object-contain rounded-3xl"
+    >
+</div>
+    <div class="order-1 lg:order-2 ">
       <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">¿Quiénes somos?</span>
       <h2 class="reveal font-display font-bold text-3xl sm:text-4xl leading-tight mb-6">Un equipo pensado para que vuelvas a enfocarte en lo importante</h2>
       <p class="reveal text-ink-soft leading-relaxed mb-5" style="transition-delay:.08s">
@@ -390,7 +353,7 @@
 </section>
 
 <!-- ===================== SERVICIOS ===================== -->
-<section id="servicios" class="py-24 lg:py-32 bg-surface-alt">
+<section id="servicios" class="py-24 lg:py-32 bg-surface-alt shadow-lg border border-gray-300">
   <div class="max-w-7xl mx-auto px-5 lg:px-8">
     <div class="max-w-2xl mx-auto text-center mb-16">
       <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Servicios</span>
@@ -401,19 +364,24 @@
 </section>
 
 <!-- ===================== SECTORES ===================== -->
-<section id="sectores" class="py-24 lg:py-32 bg-surface">
-  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+<section id="sectores" class="relative py-24 lg:py-32 border border-gray-300 bg-cover bg-center bg-no-repeat" style="background-image:url('assets/images/img-quienessomos.JFIF.JFIF')">
+  
+  <div class="absolute inset-0 bg-white/85"></div>
+  
+  <div class="relative z-10 max-w-7xl mx-auto px-5 lg:px-8">
     <div class="max-w-2xl mx-auto text-center mb-16">
       <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Sectores que ayudamos</span>
-      <h2 class="reveal font-display font-bold text-3xl sm:text-4xl">Asistencia virtual enfocada en ventas, para cada rubro</h2>
-      <p class="reveal text-ink-soft mt-4" style="transition-delay:.08s">En Assistiva Tech nos especializamos exclusivamente en asistencia virtual en ventas.</p>
+      <h2 class="reveal font-display font-bold text-3xl sm:text-4xl text-gray-900">Asistencia virtual enfocada en ventas, para cada rubro</h2>
+      <p class="reveal text-gray-700 mt-4" style="transition-delay:.08s">En Assistiva Tech nos especializamos exclusivamente en asistencia virtual en ventas.</p>
     </div>
+    
     <div id="sectorsGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
   </div>
+  
 </section>
 
 <!-- ===================== COMO TRABAJAMOS ===================== -->
-<section id="como-trabajamos" class="py-24 lg:py-32 bg-surface-alt overflow-hidden">
+<section id="como-trabajamos" class="py-24 lg:py-32 bg-surface-alt overflow-hidden border border-gray-300">
   <div class="max-w-7xl mx-auto px-5 lg:px-8">
     <div class="max-w-2xl mx-auto text-center mb-20">
       <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Cómo trabajamos</span>
@@ -427,7 +395,7 @@
 </section>
 
 <!-- ===================== BENEFICIOS ===================== -->
-<section id="beneficios" class="py-24 lg:py-32 bg-surface">
+<section id="beneficios" class="py-24 lg:py-32 bg-surface border border-gray-200">
   <div class="max-w-7xl mx-auto px-5 lg:px-8">
     <div class="max-w-2xl mx-auto text-center mb-16">
       <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Beneficios</span>
@@ -438,13 +406,12 @@
 </section>
 
 <!-- ===================== POR QUE ELEGIRNOS ===================== -->
-<section id="porque-elegirnos" class="py-24 lg:py-32 bg-surface-alt">
+<section id="porque-elegirnos" class="py-24 lg:py-32 bg-surface-alt border border-gray-300">
   <div class="max-w-7xl mx-auto px-5 lg:px-8">
     <div class="grid lg:grid-cols-5 gap-16 items-start">
       <div class="lg:col-span-2 lg:sticky lg:top-28">
         <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">¿Por qué elegirnos?</span>
         <h2 class="reveal font-display font-bold text-3xl sm:text-4xl mb-6">Nuestra empresa</h2>
-        <p class="reveal text-ink-soft leading-relaxed mb-4" style="transition-delay:.08s">Assistiva Tech es un equipo que trabaja codo a codo con cada cliente.</p>
         <p class="reveal text-ink-soft leading-relaxed mb-10" style="transition-delay:.12s">No contratamos asistentes externos ni derivamos tu proyecto a otras personas. Por eso podemos garantizar cercanía, compromiso y una mirada consistente en cada tarea.</p>
         <div id="indicatorsGrid" class="reveal grid sm:grid-cols-2 gap-4" style="transition-delay:.16s"></div>
       </div>
@@ -454,8 +421,9 @@
 </section>
 
 <!-- ===================== FAQ ===================== -->
-<section id="caso-real" class="py-24 lg:py-32 bg-surface-alt overflow-hidden">
+<section id="caso-real" class="py-24 lg:py-32 bg-surface-alt overflow-hidden border border-gray-300">
   <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    
     <div class="max-w-2xl mx-auto text-center mb-14">
       <span class="reveal inline-block text-sm font-semibold text-[var(--violet-600)] tracking-wide uppercase mb-3">Proyecto realizado</span>
       <h2 class="reveal font-display font-bold text-3xl sm:text-4xl">Saboreé</h2>
@@ -463,9 +431,20 @@
     </div>
 
     <div class="grid lg:grid-cols-5 gap-10 items-start">
+      
       <div class="lg:col-span-2 reveal card p-8 sm:p-9 grad-brand text-white flex flex-col justify-between h-full">
         <div>
-          <span class="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 text-xs font-semibold mb-6">Caso real · Alfajores artesanales</span>
+          <div class="flex items-center gap-4 mb-6">
+            <img 
+              src="assets/images/img-saboree.png" 
+              alt="Dueña de Saboreé mostrando sus alfajores" 
+              class="w-16 h-16 rounded-full object-cover border-2 border-white/30 shadow-sm"
+            >
+            <span class="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 text-xs font-semibold">
+              Caso real · Alfajores
+            </span>
+          </div>
+          
           <p class="text-white/90 leading-relaxed mb-5">La dueña del emprendimiento quería vender más y mejor a través de WhatsApp Business e Instagram, sin perder la calidez que distingue a su marca.</p>
           <p class="text-white/90 leading-relaxed">Nuestro objetivo fue mejorar el proceso de ventas sin perder la identidad de la marca, evitando respuestas frías o automatizadas.</p>
         </div>
@@ -478,6 +457,7 @@
         <h3 class="font-display font-semibold text-lg mb-5">Qué hicimos</h3>
         <ul id="caseList" class="grid sm:grid-cols-2 gap-x-6 gap-y-4"></ul>
       </div>
+      
     </div>
   </div>
 </section>
@@ -748,7 +728,6 @@
     ["cart","Gestión de e-commerce","Carga de productos, stock, pedidos y seguimiento de envíos en tu tienda online."],
     ["database","Carga de datos","Migración, actualización y limpieza de información en tus sistemas y planillas."],
     ["handshake","Soporte comercial","Seguimiento de leads y postventa para que no se te escape ninguna venta."],
-    ["layers","Gestión de proyectos","Planificación, seguimiento de tareas y coordinación de equipos en un solo lugar."],
     ["folder","Organización documental","Archivo, clasificación y resguardo de documentos siempre accesibles."],
   ];
   document.getElementById("servicesGrid").innerHTML = services.map(([icon,title,desc],i)=>`
@@ -761,9 +740,7 @@
   // ---------- Data: Sectores ----------
   const sectors = [
     ["rocket","Emprendedores","Atendemos consultas y guiamos cada conversación hacia la venta, para que no se te escape ningún cliente."],
-    ["bag","E-commerce","Optimizamos la atención en WhatsApp e Instagram y acompañamos al comprador hasta cerrar el pedido."],
-    ["briefcase","Profesionales independientes","Coordinamos consultas y turnos, dándole a cada cliente potencial una respuesta ágil y profesional."],
-    ["sliders","Servicios","Ordenamos el proceso de atención comercial para que cada consulta avance hacia el cierre."],
+    ["bag","E-commerce","Optimizamos la atención virtual ante consultas o reclamos, actualizamos catalogos."],
     ["building","Comercios","Atendemos y asesoramos a tus clientes en el momento justo, mejorando la conversión de cada consulta."],
     ["target","MiPyME","Estructuramos el proceso de ventas y atención al cliente para que crezca de forma ordenada."],
   ];
@@ -809,8 +786,7 @@
 
   // ---------- Data: Por qué elegirnos ----------
   const indicators = [
-    ["badge","Compromiso asegurado","Nos involucramos en cada proyecto con responsabilidad, dedicación y seguimiento constante."],
-    ["chat","Gestión precisa y clara","Organizamos procesos de atención y ventas para que cada interacción con el cliente sea simple, eficiente y cercana."],
+ 
   ];
   document.getElementById("indicatorsGrid").innerHTML = indicators.map(([icon,title,desc])=>`
     <div class="card p-6 text-center flex flex-col items-center">
@@ -820,11 +796,9 @@
     </div>`).join("");
 
   const whyUs = [
-    ["chat","Comunicación constante","Canales claros y disponibles para que siempre sepas en qué está tu proyecto."],
-    ["clock","Flexibilidad horaria","Adaptamos los horarios de trabajo a los tuyos y a los de tu negocio."],
+    ["chat","Comunicación constante","Canales claros y disponibles para que siempre sepas el estado de tu negocio."],
     ["repeat","Seguimiento permanente","Revisamos el desempeño y ajustamos el proceso para que siempre funcione mejor."],
-    ["puzzle","Adaptación a cada negocio","Integramos tus herramientas: WhatsApp Business, Instagram, Facebook e e-commerce."],
-    ["sparkles","Soluciones personalizadas","Ningún plan es igual a otro: armamos el servicio a medida de lo que necesitás."],
+    ["puzzle","Adaptación a cada negocio","Nos adaptamos a las herramientas que ya utilizas en tu negocio."],
     ["award","Compromiso con resultados","Medimos el impacto real de delegar, no solo las horas trabajadas."],
   ];
   document.getElementById("whyUsGrid").innerHTML = whyUs.map(([icon,title,desc],i)=>`
@@ -902,27 +876,7 @@
   closeMenuBtn.addEventListener("click", closeMenu);
   document.querySelectorAll(".mobile-link").forEach(l=>l.addEventListener("click", closeMenu));
 
-  // ---------- Dark mode ----------
-  const root = document.documentElement;
-  const sunIcon = document.getElementById("iconSun");
-  const moonIcon = document.getElementById("iconMoon");
-  const syncIcons = () => {
-    const dark = root.classList.contains("dark");
-    sunIcon.classList.toggle("hidden", dark);
-    moonIcon.classList.toggle("hidden", !dark);
-  };
-  if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches){ root.classList.add("dark"); }
-  syncIcons();
-const toggleDark = () => {
-  // Solo permitir cambiar el tema en pantallas de escritorio
-  if (window.innerWidth < 1024) return;
 
-  root.classList.toggle("dark");
-  syncIcons();
-};
-
-// Botón de escritorio
-document.getElementById("darkToggle").addEventListener("click", toggleDark);
 
 // El botón móvil ya no cambia el tema
 const darkToggleMobile = document.getElementById("darkToggleMobile");
@@ -1041,6 +995,56 @@ if (darkToggleMobile) {
   });
 
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Seleccionamos el elemento de la notificación
+  const proofPopup = document.getElementById('socialProof');
+
+  // Función para mostrarla 
+  const showSocialProof = () => {
+    if(proofPopup) {
+      proofPopup.classList.remove('opacity-0', 'translate-y-10');
+      proofPopup.classList.add('opacity-100', 'translate-y-0');
+    }
+  };
+
+  // Función para cerrarla manualmente (la atamos a 'window' para que el botón HTML la encuentre)
+  window.closeSocialProof = () => {
+    if(proofPopup) {
+      proofPopup.classList.remove('opacity-100', 'translate-y-0');
+      proofPopup.classList.add('opacity-0', 'translate-y-10');
+    }
+  };
+
+  // Aparecerá a los 5 segundos (5000 milisegundos)
+  setTimeout(showSocialProof, 5000);
+});
+
+
 </script>
+
+<div id="socialProof" class="fixed bottom-24 left-6 z-50 transform transition-all duration-500 opacity-0 translate-y-10 pointer-events-none">
+  <div class="bg-white rounded-xl shadow-lg border border-gray-200 p-4 flex items-center gap-4 max-w-xs pointer-events-auto">
+    
+    <div class="w-10 h-10 rounded-full bg-violet-100 text-[var(--violet-600)] flex flex-shrink-0 items-center justify-center">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+      </svg>
+    </div>
+    
+    <div class="text-sm">
+      <p class="text-gray-900 font-bold tracking-tight">Servicio Destacado</p>
+      <p class="text-gray-600 text-xs mt-0.5 leading-snug">Asistencia integral en <span class="font-semibold text-[var(--violet-600)]">Instagram y WhatsApp</span></p>
+    </div>
+    
+    <button onclick="closeSocialProof()" aria-label="Cerrar notificación" class="ml-2 text-gray-400 hover:text-gray-700 transition-colors">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+  </div>
+</div>
+
 </body>
 </html>
